@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ejercicio4</class>
+ <widget class="QDialog" name="Ejercicio4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>656</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ejercicio 4</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: #fff5f7;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+/* Etiquetas */
+QLabel {
+    color: #6b2d3a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Campos de texto */
+QLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #f8c8dc;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #4a1f2b;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ec4899;
+    background-color: #fff0f5;
+}
+
+/* Botón */
+QPushButton {
+    background-color: #ec4899;
+    color: white;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #db2777;
+}
+
+QPushButton:pressed {
+    background-color: #be185d;
+}
+
+/* Resultado (label especial) */
+#labelResultado {
+    font-size: 16px;
+    font-weight: bold;
+    color: #be185d;
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnCalcular">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>160</y>
+     <width>75</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calcular</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>156</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="labelX">
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelY">
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelXk">
+        <property name="text">
+         <string>Xk</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="inputX"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="inputY"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="inputXk"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>303</x>
+     <y>13</y>
+     <width>201</width>
+     <height>249</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="lblB0">
+      <property name="text">
+       <string>b0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblB1">
+      <property name="text">
+       <string>b1</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblR">
+      <property name="text">
+       <string>r</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblYk">
+      <property name="text">
+       <string>Predicción</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblT">
+      <property name="text">
+       <string>t</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblP">
+      <property name="text">
+       <string>p</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblTail">
+      <property name="text">
+       <string>tail area</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblTCritico">
+      <property name="text">
+       <string>t crítico</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblRango">
+      <property name="text">
+       <string>rango</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblUPI">
+      <property name="text">
+       <string>UPI</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblLPI">
+      <property name="text">
+       <string>LPI</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

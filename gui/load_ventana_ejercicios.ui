@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: #fff5f7;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+/* Etiquetas */
+QLabel {
+    color: #6b2d3a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Campos de texto */
+QLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #f8c8dc;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #4a1f2b;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ec4899;
+    background-color: #fff0f5;
+}
+
+/* Botón */
+QPushButton {
+    background-color: #ec4899;
+    color: white;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #db2777;
+}
+
+QPushButton:pressed {
+    background-color: #be185d;
+}
+
+/* Resultado (label especial) */
+#labelResultado {
+    font-size: 16px;
+    font-weight: bold;
+    color: #be185d;
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnCalcular">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>130</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calcular</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>116</width>
+     <height>117</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="lblX">
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblY">
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblXk">
+        <property name="text">
+         <string>Xk</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="inputX"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="inputY"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="inputXk"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>10</y>
+     <width>111</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="lblB0">
+      <property name="text">
+       <string>b0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblB1">
+      <property name="text">
+       <string>b1</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblR">
+      <property name="text">
+       <string>r</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblYk">
+      <property name="text">
+       <string>yk</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

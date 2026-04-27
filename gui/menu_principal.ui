@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>App ejercicios</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #f4f8fb;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+/* Barra de menú */
+QMenuBar {
+    background-color: #dbeafe;
+    color: #1e3a5f;
+    font-size: 48px;
+    padding: 10px;
+}
+
+/* Elementos del menú */
+QMenuBar::item {
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+QMenuBar::item:selected {
+    background-color: #93c5fd;
+    color: #0f172a;
+}
+
+QMenuBar::item:pressed {
+    background-color: #60a5fa;
+}
+
+/* Menú desplegable */
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    font-size: 48px;
+    color: #1e293b;
+}
+
+/* Opciones dentro del menú (QAction) */
+QMenu::item {
+    padding: 12px 30px;
+    border-radius: 6px;
+}
+
+QMenu::item:selected {
+    background-color: #bfdbfe;
+    color: #0f172a;
+}
+
+QMenu::item:disabled {
+    color: #94a3b8;
+}
+
+/* Separadores */
+QMenu::separator {
+    height: 2px;
+    background: #e2e8f0;
+    margin: 8px 10px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>580</width>
+     <height>115</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEjercicios">
+    <property name="title">
+     <string>Ejercicios </string>
+    </property>
+    <addaction name="actionEjercicio_1"/>
+    <addaction name="actionEjercicio_2"/>
+    <addaction name="actionEjercicio_6"/>
+    <addaction name="actionEjercicio_4"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuEjercicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionEjercicio_1">
+   <property name="text">
+    <string>Ejercicio 1</string>
+   </property>
+  </action>
+  <action name="actionEjercicio_2">
+   <property name="text">
+    <string>Ejercicio 2</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionEjercicio_4">
+   <property name="text">
+    <string>Ejercicio 4</string>
+   </property>
+  </action>
+  <action name="actionEjercicio_6">
+   <property name="text">
+    <string>Ejercicio 3</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
